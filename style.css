@@ -1,1 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* Project colors : 
+    Blue : #0065FC
+ */
+
+html{
+    font-family: 'Raleway', sans-serif;
+    padding-top: 0;
+}
+
+header{
+    height : 100px;
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#logoHeader{
+    height: 19px;
+}
+
+.navbar{ 
+    display : flex;
+    flex-basis: 20%;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 115%;
+    margin-right: 3%;
+
+
+}
+
+.navbarSelected{
+    border-top: solid #0065FC 2px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 12%;
+}
+
+.navbarNotSelected{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 12%;
+}
+
+.navLinkSelected{
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    color:  #0065FC;
+}
+
+.navLinkNotSelected{
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+}
