@@ -6,7 +6,6 @@
 
 html{
     font-family: 'Raleway', sans-serif;
-    padding-top: 0;
 }
 
 header{
@@ -15,8 +14,9 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-top: 0px;
+    margin-left: 50px;
+    margin-right: 20px;
 }
 
 #logoHeader{
@@ -24,38 +24,29 @@ header{
 }
 
 .navbar{ 
+    height: 116%;
     display : flex;
     flex-basis: 20%;
     flex-direction: row;
     justify-content: space-between;
-    height: 115%;
-    margin-right: 3%;
-
-
+    vertical-align: middle;
+    text-align: center;
+    margin-right: 50px;
 }
 
 .navbarSelected{
     border-top: solid #0065FC 2px;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 12%;
+    padding: 30px;
 }
 
 .navbarNotSelected{
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 12%;
+    padding: 30px;
 }
 
 .navLinkSelected{
-    display: flex;
-    text-align: center;
-    vertical-align: middle;
     color:  #0065FC;
 }
 
 .navLinkNotSelected{
-    display: flex;
-    text-align: center;
-    vertical-align: middle;
+    color : black;
 }
