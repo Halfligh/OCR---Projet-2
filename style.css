@@ -123,6 +123,11 @@ header{
     border-right: transparent;
     border-top: #F2F2F2 solid 1px;
     border-bottom: #F2F2F2 solid 1px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 10px;
+    outline: none;
 }
 
 ::placeholder {
@@ -134,9 +139,9 @@ header{
     line-height: 21.13px;
   }
 
-  :focus::placeholder{
+:focus::placeholder{
     color: transparent;
-  }
+}
 
 #searchButton{
     border-color: transparent;
@@ -368,6 +373,7 @@ header{
     border-radius: 25px;
     margin-right: 20px;
     margin-top: 30px;
+    width: 100%;
     border: white solid 4px;
 }
 
@@ -425,6 +431,7 @@ header{
 .activityWrap{
     margin-top: 50px;
     margin-left: 19px;
+    height : 270px;
 }
 
 footer{
@@ -435,6 +442,7 @@ footer{
     margin-left: 48px;
     margin-right: 53px;
     margin-top: 50px;
+    height: 100%;
 }
 
 .footerCol{
@@ -452,4 +460,5 @@ footer{
     margin-top: 0;
     height: 50px;
     line-height: 50px;
+    margin-bottom: 0;
 }
