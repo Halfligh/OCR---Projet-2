@@ -2,6 +2,7 @@
 <html>
     <head>
         <metacharset="utf-8">
+        <meta name="viewport" content="width=1400, initial-scale=1">
         <link rel="stylesheet" href="./style.css">
         <script src="https://kit.fontawesome.com/4f888eba30.js" crossorigin="anonymous"></script>
         <title>Booki</title>
@@ -9,13 +10,14 @@
 
  <header>
     <img src="./assets/logo/Booki.png" alt="logoBooki" id="logoHeader"/>
-    <div class="navbar">
+    <nav class="navbar">
         <div class="navbarSelected">
             <p class="navLinkSelected">Hébergements</p>
         </div>
         <div class="navbarNotSelected">
             <p class="navLinkNotSelected">Activités</p>
         </div>
+    </nav>
  </header>
 
   <body>
@@ -67,13 +69,13 @@
         <p>Plus de 500 logements sont dispnibles dans cette ville</p>
     </div>
 
-    <div class="hebergementGlobal">
-        <div class="hebergementsParent">
+    <main>
+        <section class="hebergementsParent">
 
                 <h1 class="hebergementTitle">Hébergements à Marseille</h1>
                 <div class="hebergementsWrapper">
 
-                        <div class="hebergementDiv">
+                        <a class="hebergementDiv" href=”#”>
                             <img src="./assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="aubergeCannebière" class="hebergementImage"/>
                             <div class="hebergementDivInfos">
                                 <p id="pTitle">Auberge de la cannebière</p>
@@ -86,9 +88,9 @@
                                     <i class="fa-solid fa-star" style="color: #F2F2F2"></i>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                         
-                        <div class="hebergementDiv">
+                        <a class="hebergementDiv" href=”#”>
                             <img src="./assets/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hotel-du-port" class="hebergementImage"/>
                             <div class="hebergementDivInfos">
                                 <p id="pTitle">Hôtel du port</p>
@@ -101,9 +103,9 @@
                                     <i class="fa-solid fa-star" style="color: #F2F2F2"></i>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="hebergementDiv">
+                        <a class="hebergementDiv" href=”#”>
                             <img src="./assets/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hotel-les-mouettes" class="hebergementImage"/>
                             <div class="hebergementDivInfos">
                                 <p id="pTitle">Auberge de la cannebière</p>
@@ -116,9 +118,9 @@
                                     <i class="fa-solid fa-star" style="color: #F2F2F2"></i>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="hebergementDiv">
+                        <a class="hebergementDiv" href=”#”>
                             <img src="./assets/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hotel-de-la-mer" class="hebergementImage"/>
                             <div class="hebergementDivInfos">
                                 <p id="pTitle">Hôtel de la mer</p>
@@ -131,9 +133,9 @@
                                     <i class="fa-solid fa-star" style="color: #F2F2F2"></i>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="hebergementDiv">
+                        <a class="hebergementDiv" href=”#”>
                             <img src="./assets/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="auberge-le-panier" class="hebergementImage"/>
                             <div class="hebergementDivInfos">
                                 <p id="pTitle">Auberge le panier</p>
@@ -146,9 +148,9 @@
                                     <i class="fa-solid fa-star" style="color: #F2F2F2"></i>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="hebergementDiv">
+                        <a class="hebergementDiv" href=”#”>
                             <img src="./assets/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hotel-chez-amina" class="hebergementImage"/>
                             <div class="hebergementDivInfos">
                                 <p id="pTitle">Hôtel chez Amina</p>
@@ -161,13 +163,13 @@
                                     <i class="fa-solid fa-star" style="color: #F2F2F2"></i>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
                 </div>
                 <h4 class="afficherPlus">Afficher plus</h4>
-        </div>
+        </section>
 
-        <div class="hebergementsPopular">
+        <section class="hebergementsPopular">
             <div class="popularHeader">
                 <h1 class="hebergementTitle">Les plus populaires</h1>
                 <i class="fa-solid fa-chart-line" id="popularChart"></i>
@@ -225,12 +227,14 @@
                 </div>
 
             </div>
-        </div>
+        </section>
 
-    </div>
+    </main>
 
     <div class="activityWrap">
+
         <h1 class="activityLocationH1">Activités à Marseille</h1>
+
         <ul class="activityUl">
             <li class="activityList">
                 <img src="./assets/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux-port" class="activityImg"/>
@@ -249,7 +253,7 @@
                 <p id="activityLocation">Notre-Dame-de-la-Garde</p>
             </li>
         </ul>
-    </ul>
+
   </body>
 
   <footer>
