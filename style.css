@@ -485,7 +485,7 @@ footer{
     flex-direction: column;
    };
 
-   ;.activityImg{
+   .activityImg{
     width: auto;
    }
 
@@ -550,4 +550,77 @@ footer{
 
 @media screen and (max-width: 480px) {
    
-}
+        html{
+            overflow-x: hidden;
+        }
+       
+        h1{
+            color: red;
+        }
+
+        main{
+        flex-direction: column;
+       };
+    
+       .activityImg{
+        width: auto;
+       }
+    
+       .activityUl{
+        width: auto;
+        justify-content: center;
+       }
+    
+       .hebergementsWrapper{
+        justify-content: space-between;
+        padding-left: 50px;
+        padding-right: 30px;
+        padding-bottom: 30px;    
+       }
+    
+       .afficherPlus{
+        margin-left: 50px;
+       }
+    
+       .hebergementsPopular{
+        margin-top : 50px;
+        margin-left: 0px;
+        margin-right: 30px;
+       }
+    
+       .popularWrapper{
+        flex-wrap: nowrap;
+        padding-bottom: 48px;
+        padding-right: 30px;
+       }
+    
+       .popularImage{
+        width : 42%;
+        height: 100%;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+       }
+    
+       .activityWrap{
+        height: 267px;
+       }
+    
+    
+       .activityList{
+        height: 267px;
+       }
+    
+       .activityImg{
+        height: 75%;
+       }
+    
+       #activityLocation{
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+       }
+    
+       footer{
+        margin-right: 50px;
+       }
+        }
