@@ -175,7 +175,7 @@ header{
     border-bottom-right-radius: 15px;
 }
 
-#searchIcon{
+#glassIcon{
     display: none;
 }
 
@@ -289,6 +289,7 @@ main{
     border: white solid 4px;
     color: black;
     text-decoration: none;
+    box-shadow: 0px 2px 7px 4px #D9D9D9;
 }
 
 .hebergementDivInfos{
@@ -377,7 +378,7 @@ main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    overflow: auto;
+    
 }
 
 .popularDiv{
@@ -390,6 +391,7 @@ main{
     width: 85%;
     border: white solid 4px;
     margin-left: 10px;
+    box-shadow: 0px 2px 7px 4px #D9D9D9;
 }
 
 .popularImage{
@@ -429,7 +431,7 @@ main{
     width : 302px;
     list-style: none;
     margin-right: 50px;
-    box-shadow: 0px 3px 5px #D9D9D9;
+    box-shadow: 0px 2px 7px 4px #D9D9D9;
     border-radius: 25px;
 }
 
@@ -566,7 +568,7 @@ footer{
         header{
             flex-direction: column;
             width: auto;
-            height: 140px;
+            height: 130px;
             margin-left: 0;
             margin-right: 0;
             padding-left: 0;
@@ -574,7 +576,7 @@ footer{
         }
 
         #logoHeader{
-            margin-top: 30px;
+            margin-top: 10px;
             justify-content: center;
             margin-bottom: 20px;
         }
@@ -691,8 +693,54 @@ footer{
             margin-right: 10px;
         }
 
-        .hebergementsParent{
-            margin-top: 200px;
+        main{
+            flex-direction: column-reverse;
+            margin : 0;
+            width: 100%;
+        }
+
+        .hebergementsPopular{
+            margin-top: 30px;
+            margin-left: 0px;
+            margin-right: 0px;
+            width: 100%;
+            border-radius: 0;
+        }
+
+        .popularHeader{
+            margin: 0;
+        }
+
+        .hebergementTitle{
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        .popularHeader{
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 0;
+            margin-bottom: 0;
+            height: 50px;
+            display: flex;
+            padding-right: 20px;
+        }
+
+        #popularChart{
+            height: 50px;
+        }
+
+        .popularWrapper{
+            flex-direction: column;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .popularDiv{
+            height: 130px;
+            width: auto;
         }
 
         .activityUl{
