@@ -175,6 +175,10 @@ header{
     border-bottom-right-radius: 15px;
 }
 
+#searchIcon{
+    display: none;
+}
+
 .filterView{
     margin-left: 55px;
     margin-top: 50px;
@@ -184,6 +188,11 @@ header{
     height: 50px;
     width: 100%;
     vertical-align: middle;
+}
+
+.filterList{
+    display: flex;
+    flex-direction: row;
 }
 
 .filterTitle{
@@ -549,78 +558,149 @@ footer{
     }
 
 @media screen and (max-width: 480px) {
-   
-        html{
-            overflow-x: hidden;
-        }
-       
-        h1{
-            color: red;
+
+        h1, h2{
+            margin-left: 20px;
         }
 
-        main{
-        flex-direction: column;
-       };
-    
-       .activityImg{
-        width: auto;
-       }
-    
-       .activityUl{
-        width: auto;
-        justify-content: center;
-       }
-    
-       .hebergementsWrapper{
-        justify-content: space-between;
-        padding-left: 50px;
-        padding-right: 30px;
-        padding-bottom: 30px;    
-       }
-    
-       .afficherPlus{
-        margin-left: 50px;
-       }
-    
-       .hebergementsPopular{
-        margin-top : 50px;
-        margin-left: 0px;
-        margin-right: 30px;
-       }
-    
-       .popularWrapper{
-        flex-wrap: nowrap;
-        padding-bottom: 48px;
-        padding-right: 30px;
-       }
-    
-       .popularImage{
-        width : 42%;
-        height: 100%;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-       }
-    
-       .activityWrap{
-        height: 267px;
-       }
-    
-    
-       .activityList{
-        height: 267px;
-       }
-    
-       .activityImg{
-        height: 75%;
-       }
-    
-       #activityLocation{
-        line-height: 30px;
-        display: flex;
-        align-items: center;
-       }
-    
-       footer{
-        margin-right: 50px;
-       }
+        header{
+            flex-direction: column;
+            width: auto;
+            height: 140px;
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 0;
+            padding-right: 0;
         }
+
+        #logoHeader{
+            margin-top: 30px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .navbar{
+            width: 100%;
+            height: 150px;
+            margin-right: 0px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+
+        .navbarSelected{
+            border-top: none;
+            border-bottom: solid #0065FC 2px;
+            padding : 0;
+            width: 50%;
+        }
+        
+        .navbarNotSelected{
+            border-top: none;
+            border-bottom: solid #F2F2F2 2px;
+            padding : 0;
+            width: 50%;
+        }
+        
+        .navbarNotSelected:hover{
+            cursor: pointer;
+            border-bottom: solid #0065FC 2px;
+            border-top: transparent;
+        }
+
+        .searchForm{
+            width: 90%;
+            margin-left: 20px;
+            margin-bottom: 20px;
+
+        }
+
+       .searchButtonDiv{
+            margin-left: 0;
+            padding-left: 0;
+            width: auto;
+       }
+
+        #searchButton{
+            display: none;
+            margin: 0;
+        }
+
+        .cityDiv{
+            margin-right: 0;
+            padding-right: 0;
+            width: 100%;
+        }
+
+        #citySearch{
+            width: 100%;
+            padding-left: 0;
+        }
+
+        #glassIcon{
+            display: flex;
+            color: white;
+            background-color: #0065FC;
+            height: 49px;
+            width: 50px;
+            font-weight: 700;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .filterView{
+            margin-left: 20px;
+            margin-top: 20px;
+            height: 200px;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .filterList{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap ;
+            margin-left: 0;
+            padding-left: 0;
+        }
+
+        .filterDiv{
+            width: 35%; 
+            height: 30px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-left: 0;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        .filterItem{
+            font-size: 10px;
+            margin-left: 10px;
+        }
+
+        .infoDiv{
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        .infoCircle{
+            width: 25px;
+            margin-right: 10px;
+        }
+
+        .hebergementsParent{
+            margin-top: 200px;
+        }
+
+        .activityUl{
+            flex-direction: column;
+        }
+
+        footer{
+            flex-direction: column;
+        }
+
+    }
