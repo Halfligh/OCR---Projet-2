@@ -8,28 +8,21 @@
     Marine :  #0065FC
  */
 
-html{
+body{
     font-family: 'Raleway', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 1400px;
 }
 
-
-
-h1{
+.main-tag{
     margin-left: 55px;
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
 }
 
-h2{
-    margin-left: 55px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-}
-
-h3{
+.accessory-tag{
     margin-left: 55px;
     font-weight: 400;
     font-size: 16px;
@@ -171,7 +164,7 @@ header{
     display: none;
 }
 
-.filterView{
+.filter-view{
     margin-left: 55px;
     margin-top: 50px;
     font-size: 18px;
@@ -182,17 +175,17 @@ header{
     vertical-align: middle;
 }
 
-.filterList{
+.filter-list{
     display: flex;
     flex-direction: row;
 }
 
-.filterTitle{
+.filter-title{
     font-size: 18px;
     font-weight: 700;
 }
 
-.filterDiv{
+.filter-div{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -207,17 +200,17 @@ header{
     color: #0065FC;
 }
 
-.filterDiv:hover{
+.filter-div:hover{
     background: #DEEBFF;
 }
 
-.filterItem{
+.filter-item{
     margin-left: 20px;
     font-weight: 700;
     color: black;
 }
 
-.infoDiv{
+.info-div{
     display: flex;
     flex-direction: row;
     margin-left: 55px;
@@ -226,7 +219,7 @@ header{
     font-size: 16px;
 }
 
-.infoCircle{
+.info-circle{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -239,55 +232,53 @@ header{
     color: #0065FC;
 }
 
-.hebergementGLobal{
+.hebergement-global{
     display: flex;
     flex-direction: row;
-    margin-left: 50px;
-    margin-top: 30px;
     width: 96%;
+    margin-left: 50px;
 }
 
-#hebergementsParent{
-    height: 640px;
-    width: 100%;
+#hebergements-parent{
+    width: 65%;
     display: flex;
-    flex-basis: 65%;
     flex-direction: column;
     background-color:#F2F2F2;
     border-radius: 25px;
     margin-right: 30px;
+    padding: 50px;
 }
 
-.hebergementsPopular{
+.hebergements-popular{
     display: flex;
     flex-direction: column;
-    flex-basis: 30%;
+    width: 30%;
     background-color:#F2F2F2;
     border-radius: 25px;
-    margin-left: 30px;
+    padding: 50px;
 }
 
-.hebergementsWrapper{
-    padding-left : 30px;
+.hebergements-wrapper{
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 20px;
 }
 
-.hebergementDiv{
+.hebergement-div{
     background-color: white;
-    height : 199px;
-    width : 246px;
+    height: 180px;
+    margin-bottom: 30px;
+    width : 30%;
     border-radius: 25px;
-    margin-right: 20px;
-    margin-top: 30px;
     border: white solid 4px;
     color: black;
     text-decoration: none;
     box-shadow: 0px 2px 7px 4px #D9D9D9;
 }
 
-.hebergementDivInfos{
+.hebergement-div-infos{
     flex-direction: column;
     height: 10%;
     margin: 0;
@@ -295,14 +286,14 @@ header{
     padding-left: 19px;
 }
 
-.pInfos{
+.p-infos{
     line-height: 19px;
     height: 10px;
     margin: 0;
     padding: 0;
 }
 
-.pTitle{
+.p-title{
     line-height: 19px;
     font-weight: 700;
     margin: 0;
@@ -311,7 +302,7 @@ header{
     margin-bottom: 9px;
 }
 
-.priceLabel{
+.price-label{
     margin: 0;
     padding: 0;
     line-height: 16px;
@@ -319,114 +310,102 @@ header{
     font-size: 14px;
 }
 
-.starLine{
+.star-line{
     font-size: 12px;
     color: #0065FC;
+    display: flex;
+    flex-direction: row;
 }
 
-.greystar{
+.grey-star{
     color: #F2F2F2;
 }
 
-.hebergementTitle{
-    margin-top: 50px;
+.hebergement-title{
     margin-bottom: 0;
-    margin-left: 50px;
     font-weight: 700;
     font-size: 22px;
     line-height: 25.83px;
+    margin-top: 0px;
+  
 }
 
-.hebergementImage{
-    height: 60%;
-    width : 246px;
+.hebergement-image{
+    height: 58%;
+    width : 100%;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
 
-.hebergementDivInfos{
+.hebergement-div-infos{
     display: flex;
     height: 40%;
 }
 
-.starLine{
-    display: flex;
-    flex-direction: row;
-}
-
-.afficherPlus{
+.afficher-plus{
     font-size: 18px;
     font-weight: 700;
-    margin-left: 30px;
-    margin-top: 30px;
-    margin-bottom: 50px;
 }
-.popularHeader{
+.popular-header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: 30px;
 }
 
-#popularChart{
+#popular-chart{
     color:#0065FC;
-    margin-top: 50px;
 }
 
-.popularWrapper{
-    padding-left : 30px;
+.popular-wrapper{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 20px;
     
 }
 
-.popularDiv{
+.popular-div{
     background-color: white;
     display: flex;
+    margin-bottom: 20px ;
     flex-direction: row;
     border-radius: 25px;
-    margin-right: 20px;
-    margin-top: 30px;
-    width: 85%;
+    height: 25%;
+    width: 100%;
     border: white solid 4px;
-    margin-left: 10px;
     box-shadow: 0px 2px 7px 4px #D9D9D9;
 }
 
-.popularImage{
-    height : 137px;
+.popular-image{
     width : 40%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     object-fit: cover;
 }
 
-.popularDivInfos{
+.popular-div-infos{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 90%;
     padding : 15px;
-    padding-top: 10px;
-    padding-left: 19px;
+    padding-bottom: 5px;
 }
 
-#activityWrap{
+#activity-wrap{
     margin-top: 50px;
     margin-left: 19px;
     height : 500px;
     width: auto;
 }
 
-.activityUl{
+.activity-ul{
     display: flex;
     flex-direction: row;
     width: 100%;
 }
 
-.activityList{
+.activity-list{
     height : 444.51px;
     width : 302px;
     list-style: none;
@@ -435,7 +414,7 @@ header{
     border-radius: 25px;
 }
 
-.activityImg{
+.activity-image{
     height : 389px;
     width : 100%;
     border-top-right-radius: 25px;
@@ -443,7 +422,7 @@ header{
     object-fit: cover;
 }
 
-.activityLocation{
+.activity-location{
     font-weight: 700;
     font-size: 16px;
     margin-top: 0;
@@ -452,14 +431,12 @@ header{
     padding-left: 19px;
 }
 
-.activityLocationH2{
+.activity-title{
     margin-left: 40px;
     font-size: 22px;
     font-weight: 700;
     line-height: 25.83px;
 }
-
-
 
 footer{
     width: auto;
@@ -471,7 +448,7 @@ footer{
     margin-left: 30px;
 }
 
-.footerCol{
+.footer-col{
     display: flex;
     flex-basis: 33%;
     flex-direction: column;
@@ -480,7 +457,7 @@ footer{
     line-height: 5px;
 }
 
-.footerTitle{
+.footer-title{
     font-weight: 700;
     font-size: 18px;
     margin-top: 0;
@@ -491,79 +468,95 @@ footer{
 
 @media screen and (max-width: 992px) {
    
-    html{
-        overflow-x: hidden;
-    }
-   
-    .hebergementGLobal{
+    .hebergement-global{
         flex-direction: column;
-        width: 90%;
+        flex-wrap: wrap;
+        display: flex;
    }
 
-    .filterDiv{
+   #hebergements-parent{
+        width: 85%;
+   }
+
+    .filter-div{
         margin-left: 15px;
     }
 
-   .hebergementsWrapper{
-    justify-content: center;
-    padding-bottom: 30px;    
+   .hebergements-wrapper{
+    justify-content: space-around;
    }
 
-   .afficherPlus{
+   .afficher-plus{
     margin-left: 50px;
    }
 
-   .hebergementsPopular{
+   .hebergements-popular{
     margin-top : 50px;
     margin-left: 0px;
     margin-right: 30px;
-    width: 100%;
+    width: 85%;
    }
 
-   .popularWrapper{
+   .popular-div{
+    height: 140px;
+    margin-right: 15px;
+    margin-bottom: 0px;
+   }
+
+   .popular-div-infos{
     flex-wrap: nowrap;
-    padding-bottom: 48px;
-    padding-right: 30px;
-    width: auto;
    }
 
-   .popularImage{
-    width : 42%;
-    height: 100%;
+   .p-title{
+    font-size: 14px;
+   }
+
+   .price-label{
+   font-size: 12px;
+    }
+
+   .popular-wrapper{
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 105%
+   }
+
+   .popular-image{
+    width : 35%;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
    }
 
-   #activityWrap{
+   #activity-wrap{
     height: 300px;
 }
 
-    .activityImg{
+    .activity-image{
     width: 100%;
     }
 
-    .activityUl{
+    .activity-ul{
     width: auto;
     height: 300px;
     justify-content: center;
     }
 
-    .activityLocation{
+    .activity-location{
         line-height: 20px;
         display: flex;
         align-items: center;
         }
 
-   .activityWrap{
+   .activity-wrap{
     height: 500px;
    }
 
 
-   .activityList{
+   .activity-list{
     height: 267px;
    }
 
-   .activityImg{
+   .activity-image{
     height: 75%;
    }
 
@@ -579,8 +572,16 @@ footer{
 
 @media screen and (max-width: 768px) {
 
-        h1, h2, h3{
-            margin-left: 20px;
+        main{
+            padding: 20px;
+        }
+
+        .main-tag{
+            margin-left: 0px;
+        }
+
+        .accessory-tag{
+            margin-left: 0px;
         }
 
         header{
@@ -654,16 +655,10 @@ footer{
 
         .search-form{
             width: auto;
-            margin-left: 20px;
+            margin-left: 0px;
             margin-bottom: 20px;
             margin-right: 20px;
         }
-
-       .searchButtonDiv{
-            margin-left: 0;
-            padding-left: 0;
-            width: auto;
-       }
 
        .input-button-div{
         width: auto;
@@ -700,16 +695,16 @@ footer{
             border-bottom-right-radius: 15px;
         }
 
-        .filterView{
+        .filter-view{
             margin-left: 20px;
             margin-right: 20px;
             margin-top: 20px;
-            height: 200px;
+            height: auto;
             flex-direction: column;
             width: 90%;
         }
 
-        .filterList{
+        .filter-list{
             display: flex;
             justify-content: center;
             flex-direction: row;
@@ -718,7 +713,7 @@ footer{
 
         }
 
-        .filterDiv{
+        .filter-div{
             width: 35%; 
             height: 30px;
             margin-left: 0;
@@ -726,126 +721,139 @@ footer{
             margin-bottom: 20px;
         }
 
-        .filterItem{
+        .filter-item{
             font-size: 12px;
             margin-left: 10px;
         }
 
-        .infoDiv{
+        .info-div{
             margin-left: 20px;
             margin-top: 20px;
         }
 
-        .infoCircle{
+        .info-circle{
             width: 25px;
             margin-right: 10px;
         }
 
-        .hebergementGLobal{
+        .hebergement-global{
             flex-direction: column-reverse;
             margin : 0;
             width: 100%;
+            padding-right: 0px;
         }
 
-        .hebergementsPopular{
+        .hebergements-popular{
             margin-top: 30px;
-            margin-left: 0px;
+            padding-bottom: 0px;
             margin-right: 0px;
+            padding-top: 0px;
             border-radius: 0;
+            width: 100%;
+            margin-left: -20px;
+            padding-left: 20px;
+            padding-right: 20px;
         }
 
-        .popularHeader{
-            margin: 0;
+        #hebergements-parent{
+            padding: 0px;
         }
 
-        .hebergementTitle{
-            margin-left: 20px;
-            margin-top: 20px;
-            font-size: 22px;
-            font-weight: 700;
-            line-height: 25.83px;
+        .hebergement-title{
+            margin-left: 0;
         }
 
-        .popularHeader{
+        .popular-header{
+            display: flex;
             justify-content: space-between;
-            align-items: center;
             margin-left: 0;
             margin-bottom: 0;
             height: 50px;
-            display: flex;
-            padding-right: 20px;
+            display: flex;  
             margin-top: 10px;
+            width: 100%;
         }
 
-        #popularChart{
+        #popular-chart{
             height: 50px;
         }
 
-        .popularWrapper{
+        .popular-wrapper{
             flex-direction: column;
-            justify-content: center;
-            width: auto;
+            width: 100%;
             margin: 0;
             padding: 0;
             padding-bottom: 30px;
         }
 
-        .popularDiv{
+        .popular-div{
             height: 130px;
-            width: 90%;
-            margin-left: 20px;
-            margin-right: 20px;
+            margin-bottom: 20px;
         }
 
-        #hebergementsParent{
+        #hebergements-parent{
             background-color: white;
             margin-right: 10px;
+            margin-top: 30px;
+            width: 100%;
         }
 
-        .hebergementsWrapper{
+        .hebergements-wrapper{
             width: 100%;
-            padding-left: 10px;
+            margin-left: 0px;
+            padding-top: 0px;
             margin-right: 0;
             padding-right: 0px;
         }
 
-        .hebergementDiv{
-            width: 90%;
+        .hebergement-div{
+            width: 100%;
+            height: 240px;
             box-shadow: 0px 2px 7px 4px #F2F2F2;
-            margin-right: 20px;
             margin-top: 20px;
+            margin-bottom: 0px;
         }
 
-        .hebergementImage{
+        .hebergement-image{
             width: 100%;
         }
 
-        .afficherPlus{
+        .afficher-plus{
             display: none;
         }
 
-        #activityWrap{
+        #activity-wrap{
             margin-left: 0px;
-            margin-top: 500px;
+            display: flex;
+            flex-direction: column;
+            height: auto;
+
         }
 
-        .activityLocationH2{
+
+        .activity-locationH2{
             margin-left: 10px;
             width: 120px;
             margin-top: -488px;
             position: absolute;
         }
 
-        .activityUl{
-            flex-direction: column;
+        .activity-title{
+            padding-left: 0px;
             margin-left: 0px;
-            padding-inline-start: 10px;
-            width: 98%;
         }
 
-        .activityList{
-            width: 98%;
-            margin-bottom: 20px;
+        .activity-ul{
+            flex-direction: column;
+            margin-left: 0px;
+            width: 100%;
+            height: auto;
+            padding-left: 0px;
+        }
+
+        .activity-list{
+            width: 100%;
+            margin-bottom: 25px;
         }
 
         footer{
@@ -854,10 +862,9 @@ footer{
             width: 100%;
             margin-left: 0;
             padding-bottom: 50px;
-            margin-top: 500px;
         }
 
-        .footerCol{
+        .footer-col{
             padding-left: 30px;
         }
 
